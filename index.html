@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="escudo.png" type="image/x-icon">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      background: url('https://cdn.pixabay.com/photo/2016/11/25/19/02/soccer-1859046_1280.jpg') center/cover no-repeat; /* Substitua 'caminho/para/imagem-estadio.jpg' pelo caminho correto da sua imagem */
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #fff; 
+    }
+
+    p {
+      color: #fff; 
+      max-width: 600px; 
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      color: #fff; 
+      margin-bottom: 20px;
+    }
+
+    #passwordInput {
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #333; 
+      color: #fff; 
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #senhaStatus {
+      margin-top: 10px;
+      color: #fff; 
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Atletas do Botafogo 2023-2</h1>
+  <p>Criado com objetivos exclusivamente didáticos para a disciplina Desenvolvimento Web do Ibmec Rio.</p>
+
+  <label for="passwordInput">Digite a senha: "SENHA" </label>
+  <input type="password" id="passwordInput" />
+  <button onclick="verificarSenha()">Entrar</button>
+  <p id="senhaStatus"></p>
+
+  <script>
+    function verificarSenha() {
+      const senhaInserida = document.getElementById('passwordInput').value;
+      const senhaCorreta = 'SENHA'; 
+      if (senhaInserida === senhaCorreta) {
+        window.location.href = 'jogadores.html'; 
+      } else {
+        document.getElementById('senhaStatus').innerText = 'Senha incorreta. Tente novamente.';
+      }
+    }
+  </script>
+
+</body>
+</html>

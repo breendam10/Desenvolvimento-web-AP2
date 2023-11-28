@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="escudo.png" type="image/x-icon">
+  <title>Detalhes do Atleta</title>
+  <script src="detalhes.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url("https://cdn.pixabay.com/photo/2016/11/08/05/18/football-1807520_1280.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif; 
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    #foto, #informacoes {
+      background-color: rgba(255, 255, 255, 0.8); 
+      padding: 20px;
+      border-radius: 10px;
+      margin: 10px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <section>
+    <div id="foto"></div>
+    <div id="informacoes"></div>
+    <a href="jogadores.html"><button id="btnVoltar">Voltar</button></a>
+  </section>
+  <footer></footer>
+
+</body>
+</html>
